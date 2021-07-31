@@ -1,0 +1,8 @@
+<element shadowroot="open">
+	<slot name="as">Hello</slot>, <slot>You</slot>!
+	<script>
+	export function connectedCallback() {
+		console.log('connectedCallback', this)
+	}
+	</script>
+</element>

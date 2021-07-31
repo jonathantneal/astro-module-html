@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/Base.layout.astro'
+import Hello from '../components/Hello.module.html'
+---
+<BaseLayout>
+	<p>
+		<Hello>Astro</Hello>
+	</p>
+	<p>
+		<Hello as="Aloha">Snowpack</Hello>
+	</p>
+
+	<Hello client:script />
+</BaseLayout>
